@@ -5,17 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/redbackground"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Relative Layout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
+        android:rotation="-13"
+        android:text="Relative Layout"
+        android:textColor="@color/textColor"
         android:textSize="48sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/username_tv"
@@ -25,6 +28,7 @@
         android:layout_marginTop="100dp"
         android:padding="5dp"
         android:text="Username"
+        android:textColor="@color/textColor"
         android:textSize="24sp"
         android:textStyle="bold"/>
 
@@ -36,6 +40,7 @@
         android:layout_marginTop="30dp"
         android:padding="5dp"
         android:text="Password"
+        android:textColor="@color/textColor"
         android:textSize="24sp"
         android:textStyle="bold"/>
 
@@ -47,6 +52,7 @@
         android:layout_alignBaseline="@id/username_tv"
         android:layout_toRightOf="@id/username_tv"
         android:inputType="text"
+        android:backgroundTint="@color/editTextColor"
         android:textSize="24sp"/>
 
     <EditText
@@ -57,6 +63,7 @@
         android:layout_alignBaseline="@id/password_tv"
         android:layout_toRightOf="@id/password_tv"
         android:inputType="textPassword"
+        android:backgroundTint="@color/editTextColorTwo"
         android:textSize="24sp"/>
 
     <LinearLayout
@@ -72,12 +79,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="24dp"
+            android:backgroundTint="@color/buttonColor"
             android:text="Login"/>
 
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonColor"
             android:text="Forgot"/>
 
     </LinearLayout>
@@ -89,6 +98,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/buttonColor"
         android:text="Register"/>
 
 </RelativeLayout>
